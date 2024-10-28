@@ -1,0 +1,155 @@
+/* Section container with white background and border-radius */
+.auto-scroll-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color: white; /* White background */
+    position: relative;
+}
+
+/* Wrapper with rounded corners */
+.scroll-wrapper {
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Carousel styling */
+.scroll-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+    height: 100%;
+}
+
+/* Individual image container */
+.scroll-image {
+    min-width: 100%;
+    height: 100%;
+}
+
+/* Styling for images */
+.scroll-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px; /* Match border-radius of wrapper */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .scroll-wrapper {
+        width: 90%;
+        height: 70vh;
+    }
+}
+.container .row img{
+    border-radius: 15px;
+}
+
+@media (max-width: 480px) {
+    .scroll-wrapper {
+        width: 95%;
+        height: 60vh;
+    }
+}
+
+
+.centered-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Full viewport height */
+    text-align: center;
+}
+
+.centered-heading h1 {
+    font-size: 2.5rem; /* Default heading size */
+    color: #ffffff;
+   
+}
+
+/* Responsive font size for smaller devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+.official-partners {
+    text-align: start;
+    padding: 5px 5px;
+    background-color: #000000;
+}
+
+.official-partners h3{
+    color: white;
+    display: flex;
+    justify-content: start;
+}
+
+.partners-heading {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    max-width: 600px;
+    /* margin: 0 auto; */
+}
+
+.partners-logos img{
+    scale: 0.5;
+}
+
+.partner-logo {
+    max-width: 120px;
+    
+    opacity: 0.6; /* To give a grayed-out look */
+    transition: opacity 0.3s ease;
+}
+
+.partner-logo:hover {
+    opacity: 1; /* On hover, make the logo fully visible */
+}
+
+@media (max-width: 768px) {
+    .partner-logo {
+        max-width: 80px; /* Reduce logo size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .partners-logos {
+        justify-content: space-between;
+    }
+
+    .partner-logo {
+        max-width: 60px;
+    }
+}
